@@ -125,3 +125,5 @@ The option for skipping users works the same way. If we didn't want to touch geo
 
 By default, the tool will prompt before actually DCSyncing or testing authentication against any users that it discovered through searching. To skip this, you can specify `-NoConfirm`. This does not apply when using a .csv file input, as all of the usernames are already user chosen.
 
+## Import into Powershell
+To run the script, verify `Get-ExecutionPolicy` allows execution. Then navigate to the downloaded file in Windows Explorer and unblock the script. Open Powershell and `cd` to the file location. To import the file, type `. .\Invoke-PWAudit.ps1`. Then run the `Invoke-PWAudit` function. 
